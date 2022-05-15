@@ -18,7 +18,23 @@
     position: relative;
     top: 0px;
     left: 0px;
+    text-align: center;
     animation: move 2s linear infinite;
+}
+#bluecar img{
+    height: 100px;
+}
+#racecar{
+    height: 100px;
+    width: 130px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+#racecar img{
+    height: 100px;
 }
 @keyframes move{
     0%{
