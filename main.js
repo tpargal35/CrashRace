@@ -12,25 +12,20 @@ var jumpsound = document.getElementById("jumpsound")
 blueCar.addEventListener("animationiteration", function(){
     var random = ((Math.floor(Math.random() * 3)) * 130)
     blueCar.style.left = random + "px";
-    counter++
+    counter++;
 })
 
 //rececar move
 window.addEventListener("keydown", function(e){
    if(e.keyCode == "39"){ var raceCarLeft = parseInt(window.getComputedStyle(raceCar).getPropertyValue("left"))
-    if(raceCarLeft < 260){raceCar.style.left = (raceCarLeft + 130) + "px"}
-    jumpsound.play()
+    if(raceCarLeft < 260){raceCar.style.left = (raceCarLeft + 130) + "px";jumpsound.play();}
 };
 
     if(e.keyCode == "37"){
         var raceCarLeft = parseInt(window.getComputedStyle(raceCar).getPropertyValue("left"))
-        if(raceCarLeft > 0){raceCar.style.left = (raceCarLeft - 130) + "px"
-        jumpsound.play()
-    }
-
+        if(raceCarLeft > 0){raceCar.style.left = (raceCarLeft - 130) + "px";jumpsound.play();}    
     }
 })
-
 
 //Game over
 setInterval(function Gameover (){
